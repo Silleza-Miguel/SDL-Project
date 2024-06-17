@@ -1,0 +1,68 @@
+﻿<UserControl x:Class="WpfApp4.Views.RoomNav.CTFloor6"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+             xmlns:convert="clr-namespace:WpfApp4.Converters"
+             xmlns:keyboard="clr-namespace:WpfApp4.Shiftable"
+             xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+             xmlns:local="clr-namespace:WpfApp4.Views.RoomNav"
+             mc:Ignorable="d" 
+             Width="1041" Height="555">
+    <Grid>
+        <ui:Image Grid.Row="1"
+                  Grid.Column="0"
+                  Margin="15"
+                  Height="525"
+                  VerticalContentAlignment="Center"
+                  CornerRadius="10"
+                  BorderThickness="10"
+                  Source="\Resources\CTfloor\CT6.jpg">
+            <ui:Image.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF5DE0E6"/>
+                    <GradientStop Color="#004AAD" Offset="1"/>
+                </LinearGradientBrush>
+            </ui:Image.BorderBrush>
+        </ui:Image>
+
+        <Path  HorizontalAlignment="Left" Height="118" Margin="261,284,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="141">
+            <Path.Data>
+                <PathGeometry Figures="M261.93333,284.33333 L401.09999,285.76668 401.09999,451.50613 260.832,451.50613 z"/>
+            </Path.Data>
+        </Path>
+        <Path  HorizontalAlignment="Left" Height="118" Margin="402,285,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="141">
+            <Path.Data>
+                <PathGeometry Figures="M541.53333,285.4 L541.53333,402.09999 401.36666,400.73684 401.36666,285.83222 z"/>
+            </Path.Data>
+        </Path>
+        <Path  HorizontalAlignment="Left" Height="77" Margin="543,285,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="94">
+            <Path.Data>
+                <PathGeometry Figures="M560.73333,285.4 L636.23334,285.4 636.23334,361.03333 542.78112,361.03333 542.78112,285.30048 z"/>
+            </Path.Data>
+        </Path>
+        <Path  HorizontalAlignment="Left" Height="167" Margin="262,68,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="125">
+            <Path.Data>
+                <PathGeometry Figures="M262.33333,67.8 L385.90001,67.8 385.90001,233.5 263.76167,233.5 z"/>
+            </Path.Data>
+        </Path>
+        <Path  HorizontalAlignment="Left" Height="167" Margin="389,69,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="125">
+            <Path.Data>
+                <PathGeometry Figures="M513,68.866667 L513,229.83334 513,231.93289 513,235.23423 388.76667,234.46587 388.76667,68.766447 z"/>
+            </Path.Data>
+        </Path>
+        <Path  HorizontalAlignment="Left" Height="155" Margin="664,87,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="124">
+            <Path.Data>
+                <PathGeometry Figures="M664.33333,87 L664.33333,241.16667 787.36665,241.16667 787.36665,130.28012 z"/>
+            </Path.Data>
+        </Path>
+        <Path  HorizontalAlignment="Left" Height="109" Margin="660,286,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="175">
+            <Path.Data>
+                <PathGeometry Figures="M663.26667,285.53333 L834.76666,285.53333 834.76666,393.89999 659.82329,393.89999 z"/>
+            </Path.Data>
+        </Path>
+
+
+    </Grid>
+</UserControl>

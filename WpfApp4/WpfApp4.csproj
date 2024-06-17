@@ -1,0 +1,254 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\480.mp4" />
+    <None Remove="Resources\adulogo-white.png" />
+    <None Remove="Resources\bluewave.png" />
+    <None Remove="Resources\BuildingImage\Buffer.png" />
+    <None Remove="Resources\BuildingImage\CAMPUS.jpg" />
+    <None Remove="Resources\BuildingImage\CS.jpg" />
+    <None Remove="Resources\BuildingImage\CT.jpg" />
+    <None Remove="Resources\BuildingImage\OZ.jpg" />
+    <None Remove="Resources\BuildingImage\ST.jpg" />
+    <None Remove="Resources\BuildingImage\SV.jpg" />
+    <None Remove="Resources\campusmap.jpg" />
+    <None Remove="Resources\campusmap.png" />
+    <None Remove="Resources\campusmap1.png" />
+    <None Remove="Resources\CTfloor\CT2.jpg" />
+    <None Remove="Resources\CTfloor\CT3.jpg" />
+    <None Remove="Resources\CTfloor\CT4.jpg" />
+    <None Remove="Resources\CTfloor\CT5.jpg" />
+    <None Remove="Resources\CTfloor\CT6.jpg" />
+    <None Remove="Resources\CTfloor\CT7.jpg" />
+    <None Remove="Resources\CTfloor\CT8.jpg" />
+    <None Remove="Resources\CTfloor\CT9.jpg" />
+    <None Remove="Resources\CTfloor\CTGF.jpg" />
+    <None Remove="Resources\CTfloor\CT_301.MOV" />
+    <None Remove="Resources\CTfloor\CT_301.png" />
+    <None Remove="Resources\CTfloor\CT_302.MOV" />
+    <None Remove="Resources\CTfloor\CT_302.png" />
+    <None Remove="Resources\CTfloor\CT_303.MOV" />
+    <None Remove="Resources\CTfloor\CT_303.png" />
+    <None Remove="Resources\CTfloor\CT_304.MOV" />
+    <None Remove="Resources\CTfloor\CT_304.png" />
+    <None Remove="Resources\CTfloor\CT_305.MOV" />
+    <None Remove="Resources\CTfloor\CT_305.png" />
+    <None Remove="Resources\CTfloor\CT_306.MOV" />
+    <None Remove="Resources\CTfloor\CT_306.png" />
+    <None Remove="Resources\CTfloor\CT_bldg_page-0002.jpg" />
+    <None Remove="Resources\CTfloor\Videos\CT_301.MOV" />
+    <None Remove="Resources\CTfloor\Videos\CT_301.png" />
+    <None Remove="Resources\CTfloor\Videos\CT_302.MOV" />
+    <None Remove="Resources\CTfloor\Videos\CT_302.png" />
+    <None Remove="Resources\CTfloor\Videos\CT_303.MOV" />
+    <None Remove="Resources\CTfloor\Videos\CT_303.png" />
+    <None Remove="Resources\CTfloor\Videos\CT_304.MOV" />
+    <None Remove="Resources\CTfloor\Videos\CT_304.png" />
+    <None Remove="Resources\CTfloor\Videos\CT_305.MOV" />
+    <None Remove="Resources\CTfloor\Videos\CT_305.png" />
+    <None Remove="Resources\CTfloor\Videos\CT_306.MOV" />
+    <None Remove="Resources\CTfloor\Videos\CT_306.png" />
+    <None Remove="Resources\dexlogo.png" />
+    <None Remove="Resources\FloorBuffer.png" />
+    <None Remove="Resources\idle_bg.mp4" />
+    <None Remove="Resources\map.png" />
+    <None Remove="Resources\OZfloor\OZ1.jpg" />
+    <None Remove="Resources\OZfloor\OZ2.jpg" />
+    <None Remove="Resources\OZfloor\OZ3.jpg" />
+    <None Remove="Resources\OZfloor\OZ4.jpg" />
+    <None Remove="Resources\searchicon.png" />
+    <None Remove="Resources\STfloor\ST1.jpg" />
+    <None Remove="Resources\STfloor\ST2.jpg" />
+    <None Remove="Resources\STfloor\ST3.jpg" />
+    <None Remove="Resources\STfloor\ST4.jpg" />
+    <None Remove="Resources\STfloor\ST_bldg_page-0005.jpg" />
+    <None Remove="Resources\STfloor\ST_bldg_page-0006.jpg" />
+    <None Remove="Resources\STfloor\ST_bldg_page-0007.jpg" />
+    <None Remove="Resources\STfloor\ST_bldg_page-0008.jpg" />
+    <None Remove="Resources\templogo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MahApps.Metro" Version="2.4.10" />
+    <PackageReference Include="Microsoft.Xaml.Behaviors.Wpf" Version="1.1.77" />
+    <PackageReference Include="MvvmDialogs" Version="9.1.2" />
+    <PackageReference Include="System.Collections" Version="4.3.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
+    <PackageReference Include="WPF-UI" Version="3.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\VisualKeyboard.Control\VisualKeyboard.Control.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\480.mp4">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\adulogo-white.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\bluewave.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Buffer.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\BuildingImage\CAMPUS.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\campusmap.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\campusmap.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\campusmap1.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\CTfloor\CT2.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\CTfloor\CT3.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\CTfloor\CT4.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\CTfloor\CT5.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\CTfloor\CT6.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\CTfloor\CT7.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\CTfloor\CT8.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\CTfloor\CT9.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\CTfloor\CTGF.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\CTfloor\CT_bldg_page-0002.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\CTfloor\Videos\CT_301.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\CTfloor\Videos\CT_302.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\CTfloor\Videos\CT_303.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\CTfloor\Videos\CT_304.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\CTfloor\Videos\CT_305.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\CTfloor\Videos\CT_306.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\dexlogo.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="Resources\CTfloor\Videos\CT_301.MOV">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\CTfloor\Videos\CT_302.MOV">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\CTfloor\Videos\CT_303.MOV">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\CTfloor\Videos\CT_304.MOV">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\CTfloor\Videos\CT_305.MOV">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\CTfloor\Videos\CT_306.MOV">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\idle_bg.mp4">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Resources\BuildingImage\CS.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\BuildingImage\CT.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\BuildingImage\OZ.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\BuildingImage\ST.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\BuildingImage\SV.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\FloorBuffer.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\map.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\OZfloor\OZ1.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\OZfloor\OZ2.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\OZfloor\OZ3.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\OZfloor\OZ4.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\searchicon.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\STfloor\ST1.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\STfloor\ST2.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\STfloor\ST3.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\STfloor\ST4.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\STfloor\ST_bldg_page-0005.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\STfloor\ST_bldg_page-0006.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\STfloor\ST_bldg_page-0007.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\STfloor\ST_bldg_page-0008.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\templogo.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34714.143
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfApp4", "WpfApp4\WpfApp4.csproj", "{34DED164-92CE-4BF4-BFF9-5EE2A122B671}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisualKeyboard.Control", "VisualKeyboard.Control\VisualKeyboard.Control.csproj", "{927EDC3C-FBAC-4344-8205-54C88EA70C1A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{34DED164-92CE-4BF4-BFF9-5EE2A122B671}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34DED164-92CE-4BF4-BFF9-5EE2A122B671}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34DED164-92CE-4BF4-BFF9-5EE2A122B671}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34DED164-92CE-4BF4-BFF9-5EE2A122B671}.Release|Any CPU.Build.0 = Release|Any CPU
+		{927EDC3C-FBAC-4344-8205-54C88EA70C1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{927EDC3C-FBAC-4344-8205-54C88EA70C1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{927EDC3C-FBAC-4344-8205-54C88EA70C1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{927EDC3C-FBAC-4344-8205-54C88EA70C1A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BA258DA3-63D6-432D-98E9-2860C9834111}
+	EndGlobalSection
+EndGlobal
