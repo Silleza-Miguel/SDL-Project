@@ -191,6 +191,8 @@ namespace WpfApp4.ViewModels
         {
             _buildingStore = buildingStore;
 
+            //Test commit
+
             FloorManager.getDatabase(_buildingStore);
             FloorManager.checkDatabase();
 
