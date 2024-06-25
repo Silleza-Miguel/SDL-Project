@@ -505,7 +505,8 @@
                        VerticalAlignment="Stretch"
                        Width="440"
                        CornerRadius="10"
-                       Command="{Binding VideoNavigateCommand}">
+                       Command="{Binding VideoNavigateCommand}"
+                       Click="Button_Click">
 
                 <ui:Button.Background>
 
