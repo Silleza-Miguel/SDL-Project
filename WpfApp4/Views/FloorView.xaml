@@ -258,7 +258,7 @@
                         </Style>
                     </Grid.Resources>
 
-                    <ui:Image Grid.Row="1"
+                    <!--<ui:Image Grid.Row="1"
                               Grid.Column="0"
                               Margin="15"
                               Height="525"
@@ -273,44 +273,10 @@
                                 <GradientStop Color="#004AAD" Offset="1"/>
                             </LinearGradientBrush>
                         </ui:Image.BorderBrush>
-                    </ui:Image>
+                    </ui:Image>-->
 
                     <ContentControl x:Name="contentPath" Content="{Binding Test}"/>
 
-                    <!--<ui:Image Grid.Row="1"
-                              Grid.Column="0"
-                              Margin="15"
-                              Height="525"
-                              VerticalContentAlignment="Center"
-                              CornerRadius="10"
-                              BorderThickness="10"
-                              Source="\Resources\OZfloor\OZ1.jpg">     
-
-                        <ui:Image.BorderBrush>
-                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                                <GradientStop Color="#FF5DE0E6"/>
-                                <GradientStop Color="#004AAD" Offset="1"/>
-                            </LinearGradientBrush>
-                        </ui:Image.BorderBrush>
-                    </ui:Image>-->
-
-                    <!--<ui:Image Grid.Row="1"
-                              Grid.Column="0"
-                              Margin="15"
-                              Height="525"
-                              VerticalContentAlignment="Center"
-                              CornerRadius="10"
-                              BorderThickness="10"
-                              Source="C:\Users\johnr\Downloads\WpfApp4\WpfApp4\Resources\STfloor\ST2.jpg">
-
-                        <ui:Image.BorderBrush>
-                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                                <GradientStop Color="#FF5DE0E6"/>
-                                <GradientStop Color="#004AAD" Offset="1"/>
-                            </LinearGradientBrush>
-                        </ui:Image.BorderBrush>
-                    </ui:Image>
-                    <flr:OZFloor1/>-->
                 </Grid>
             </Grid>
 
