@@ -258,6 +258,7 @@
                         </Style>
                     </Grid.Resources>
 
+                    <!--Image Control here-->
                     <!--<ui:Image Grid.Row="1"
                               Grid.Column="0"
                               Margin="15"
