@@ -334,7 +334,7 @@
                             <Border Grid.Row="1"
                                         Padding="5">
 
-                                <ui:ListView>
+                                <ui:ListView IsHitTestVisible="False">
                                     <ui:ListViewItem Content="1. SV Building"/>
                                     <ui:ListViewItem Content="2. Covered Court"/>
                                     <ui:ListViewItem Content="3. Adamson Univeristy Gymnasium"/>
@@ -399,7 +399,7 @@
                             <Border Grid.Row="1"
                                         Padding="5">
 
-                                <ui:ListView >
+                                <ui:ListView IsHitTestVisible="False">
                                     <ui:ListViewItem Content="1. ST Building"/>
                                     <ui:ListViewItem Content="2. ST Pedestrian Entrance/Exit"/>
                                     <ui:ListViewItem Content="3. ST Service Gate"/>
@@ -465,7 +465,7 @@
                             <Border Grid.Row="1"
                                         Padding="5">
 
-                                <ui:ListView >
+                                <ui:ListView IsHitTestVisible="False">
                                     <ui:ListViewItem Content="1. CS Building"/>
                                     <ui:ListViewItem Content="2. CS Vehicle and Pedestrian Entrance/Exit"/>
                                     <ui:ListViewItem Content="3. CS Annex Service Gate"/>
