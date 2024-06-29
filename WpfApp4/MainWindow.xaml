@@ -9,7 +9,8 @@
       mc:Ignorable="d" 
       d:DesignHeight="{x:Static SystemParameters.PrimaryScreenHeight}" 
       d:DesignWidth="{x:Static SystemParameters.PrimaryScreenWidth}"
-      WindowState="Maximized">
+      WindowState="Maximized"
+      WindowStyle="None">
 
     <ContentControl Content="{Binding CurrentViewModel}">
         <ContentControl.Resources>
