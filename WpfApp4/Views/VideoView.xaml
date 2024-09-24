@@ -24,7 +24,7 @@
         <!--Top Bar-->
         <Border Height="90" Background="#05548B">
             <Grid>
-                <ui:Image Source="\Resources\dexlogo.png"  HorizontalAlignment="Left"  Margin="25,15,15,15" Width="200">
+                <ui:Image Source="\Resources\adulogo.png"  HorizontalAlignment="Left"  Margin="25,10,10,10" Width="200">
                     <ui:Image.Effect>
                         <DropShadowEffect BlurRadius="0"
                                           ShadowDepth="1"/>
@@ -168,7 +168,7 @@
         </Popup>
 
         <Grid ShowGridLines="False"
-      Margin="25">
+              Margin="25">
 
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
@@ -182,7 +182,7 @@
             </Grid.RowDefinitions>
 
             <Grid Grid.Row="0"
-          Grid.Column="0">
+                  Grid.Column="0">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto"/>
                     <ColumnDefinition Width="Auto"/>
@@ -216,6 +216,7 @@
                       MaxWidth="1000">
                 </ui:TextBlock>
             </Grid>
+            
             <Border Grid.Row="1"
                     Grid.Column="0"
                     BorderThickness="10"
@@ -226,7 +227,7 @@
                     Height="600"
                     Margin="15">
 
-                <MediaElement Source="{Binding Video}"/>
+                <MediaElement x:Name="VideoFrame" Source="{Binding Video}" IsMuted="True" MediaOpened="VideoFrame_MediaOpened" MediaEnded="VideoFrame_MediaEnded"/>
 
                 <Border.BorderBrush>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">

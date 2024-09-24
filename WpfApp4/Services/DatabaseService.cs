@@ -1,4 +1,7 @@
 ﻿using System.Data.SqlClient;
+using System.Diagnostics;
+using WpfApp4.Models;
+using WpfApp4.Stores;
 
 namespace WpfApp4.Services
 {
@@ -28,6 +31,18 @@ namespace WpfApp4.Services
         public static void getConnectionState()
         {
             Console.WriteLine($"Connection State: {Connection.State}");
+        }
+
+        public static void UpdateDatabaseValue(string table, string columnName, List<string> newValue, List<string> oldValue)
+        {
+            for(int i = 0; i < newValue.Count(); i++)
+            {
+                using (SqlCommand command = new SqlCommand($"update test.dbo.{table} set {columnName} = '{newValue[i]}' where {columnName} = '{oldValue[i]}'", connection()))
+                {
+                    command.ExecuteNonQuery();
+                    connectionClose();
+                }
+            }
         }
     }
 }

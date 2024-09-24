@@ -15,7 +15,7 @@ namespace WpfApp4.Models
 
             if (query.Length != 0)
             {
-                using (SqlCommand command = new SqlCommand($"select top 4 * from test.dbo.Room r join test.dbo.Building b on r.roomBuilding=b.buildingID where roomName like '{query}%' and roomVideo is not null", DatabaseService.connection()))
+                using (SqlCommand command = new SqlCommand($"select top 4 * from test.dbo.Room r join test.dbo.Building b on r.roomBuilding=b.buildingID where roomName like '%{query}%' order by roomName asc", DatabaseService.connection()))
                 {
                     // Execute the query and retrieve the result
                     using (SqlDataReader reader = command.ExecuteReader())
@@ -35,9 +35,9 @@ namespace WpfApp4.Models
 
                                 RoomBuildingName = Convert.ToString(reader["buildingName"]),
 
-                                RoomVideoID = Convert.ToString(reader["roomVideo"] is DBNull ? null : reader["roomVideo"]),
+                                RoomVideo = Convert.ToString(reader["roomVideo"] is DBNull ? null : reader["roomVideo"]),
 
-                                RoomQR = Convert.ToString(reader["roomQR"] is DBNull ? new Uri("../Resources/Buffer.png", UriKind.Relative) : reader["roomQR"])
+                                RoomQR = Convert.ToString(reader["roomQR"] is DBNull ? new Uri("../Resources/Buffer.png", UriKind.Relative) : $@"\{reader["roomQR"]}")
                             });
 
                             Console.WriteLine($"SHIT HAS BEEN ADDED");
@@ -57,7 +57,7 @@ namespace WpfApp4.Models
                 {
                     var room = DatabaseRoom[i];
 
-                    Debug.WriteLine($"{room.RoomID}, {room.RoomName}, {room.RoomFloor}, {room.RoomBuildingID}, {room.RoomVideoID}");
+                    Debug.WriteLine($"{room.RoomID}, {room.RoomName}, {room.RoomFloor}, {room.RoomBuildingID}, {room.RoomVideo}");
                 }
             }
         }

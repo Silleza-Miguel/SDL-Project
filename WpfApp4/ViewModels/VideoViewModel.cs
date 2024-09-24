@@ -16,6 +16,8 @@ namespace WpfApp4.ViewModels
 
         public BuildingStore _buildingStore;
 
+        public NavigationStore _navigationStore;
+
         private string? _roomName;
         public string? RoomName
         {
@@ -82,6 +84,7 @@ namespace WpfApp4.ViewModels
             set
             {
                 _query = value;
+
                 OnPropertyChanged(nameof(Query));
                 Debug.WriteLine(Query);
 
@@ -92,17 +95,32 @@ namespace WpfApp4.ViewModels
             }
         }
 
+        private int test;
+        public int Test
+        {
+            get
+            {
+                return test;
+            }
+            set
+            {
+                test = value;
+                OnPropertyChanged(nameof(Test));
+            }
+        }
+
         public VideoViewModel(NavigationStore navigationStore, BuildingStore buildingStore)
         {
             _buildingStore = buildingStore;
+
+            _navigationStore = navigationStore;
+
 
             Video = _buildingStore.CurrentVideo;
 
             QR = _buildingStore.CurrentVideoQR;
 
             RoomName = $"{buildingStore.CurrentRoom.ToUpper()}";
-
-            //Video = "C:\\Users\\schumarkie\\Videos\\pythondownload\\【アニメ】起こすな危険！.mp4";
 
             FloorNavigateCommand = new NavigateCommand<FloorViewModel>(buildingStore, new NavigationService<FloorViewModel>(navigationStore, () => new FloorViewModel(navigationStore, buildingStore)));
 

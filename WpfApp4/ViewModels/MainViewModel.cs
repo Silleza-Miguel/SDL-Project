@@ -3,6 +3,7 @@ using System.Windows.Threading;
 using WpfApp4.Models;
 using WpfApp4.Services;
 using WpfApp4.Stores;
+using WpfApp4.Views;
 using WpfApp4.Views.RoomNav;
 
 namespace WpfApp4.ViewModels
@@ -14,9 +15,16 @@ namespace WpfApp4.ViewModels
         private readonly NavigationStore _navigationStore;
 
         private readonly BuildingStore _buildingStore;
+
         public ViewModelBase CurrentViewModel => _navigationStore.CurrentViewModel;
 
+        public bool isPLaying => VideoView.IsVideoPlaying;
+
         private DispatcherTimer _timer;
+
+        private bool istouched = false;
+
+        private TimeSpan newIdleTime;
 
         public MainViewModel(NavigationStore navigationStore, DispatcherTimer timer, BuildingStore buildingStore)
         {
@@ -26,19 +34,23 @@ namespace WpfApp4.ViewModels
 
             _timer = timer;
 
-            _navigationStore.CurrentViewModelChanged += _navigationStore_CurrentViewModelChanged;
+            _navigationStore.CurrentViewModelChanged += CurrentViewModelChanged;
+
+            VideoView.VideoStatusChanged += IsVideoPlayingChanged;
 
             _navigationService = new NavigationService<IdleViewModel>(_navigationStore, () => new IdleViewModel(_navigationStore, _buildingStore));
         }
 
-        private void _navigationStore_CurrentViewModelChanged()
+        private void IsVideoPlayingChanged()
         {
-            OnPropertyChanged(nameof(CurrentViewModel));
-
+            OnPropertyChanged(nameof(isPLaying));
             _timer.Tick -= timer_Tick;
 
-            if (_navigationStore.CurrentViewModel.GetType() != typeof(IdleViewModel))
+            if (isPLaying == false)
             {
+                var idleTime = IdleTimeService.GetIdleTimeInfo();
+
+                newIdleTime = idleTime.IdleTime;
 
                 _timer.Interval = TimeSpan.FromSeconds(1);
                 _timer.Tick += timer_Tick;
@@ -49,19 +61,74 @@ namespace WpfApp4.ViewModels
             {
                 _timer.Stop();
             }
+
+        }
+
+        private void CurrentViewModelChanged()
+        {
+            OnPropertyChanged(nameof(CurrentViewModel));
+
+            _timer.Tick -= timer_Tick;
+
+            if (CurrentViewModel.GetType() == typeof(IdleViewModel))
+            {
+                _timer.Stop();
+            }
+
+            else if (CurrentViewModel.GetType() == typeof(VideoViewModel))
+            {
+                _timer.Stop();
+            }
+
+            else
+            {
+                _timer.Interval = TimeSpan.FromSeconds(1);
+                _timer.Tick += timer_Tick;
+                _timer.Start();
+            }
         }
 
         public void timer_Tick(object sender, EventArgs e)
         {
             var idleTime = IdleTimeService.GetIdleTimeInfo();
 
-            if (idleTime.IdleTime.TotalSeconds >= 10)
+            int threshold = 30;
+
+            if (CurrentViewModel.GetType() == typeof(VideoViewModel))
             {
-                //MessageBox.Show($"APP IS IDLE AIIEEEEE \n{idleTime.IdleTime.TotalSeconds} and {TimeSpan.FromMilliseconds(idleTime.SystemUptimeMilliseconds)}\nCurrent ViewModel: {_navigationStore.CurrentViewModel}");
+                if (idleTime.IdleTime.TotalSeconds < newIdleTime.TotalSeconds || istouched == true)
+                {
+                    istouched = true;
 
-                //_navigationStore.CurrentViewModel = new IdleViewModel(_navigationStore, _buildingStore);
+                    if(idleTime.IdleTime.TotalSeconds >= threshold)
+                    {
+                        //MessageBox.Show($"APP IS IDLE AIIEEEEE \n{idleTime.IdleTime.TotalSeconds} and {TimeSpan.FromMilliseconds(idleTime.SystemUptimeMilliseconds)}\nCurrent ViewModel: {_navigationStore.CurrentViewModel}");
 
-                _navigationService.Navigate();
+                        //_navigationStore.CurrentViewModel = new IdleViewModel(_navigationStore, _buildingStore);
+                        istouched = false;
+                        _navigationService.Navigate();
+                    }
+                }
+
+                else if ((idleTime.IdleTime.TotalSeconds - newIdleTime.TotalSeconds) >=  + threshold && istouched == false)
+                {
+                    //MessageBox.Show($"APP IS IDLE AIIEEEEE \n{idleTime.IdleTime.TotalSeconds} and {TimeSpan.FromMilliseconds(idleTime.SystemUptimeMilliseconds)}\nCurrent ViewModel: {_navigationStore.CurrentViewModel}");
+
+                    //_navigationStore.CurrentViewModel = new IdleViewModel(_navigationStore, _buildingStore);
+
+                    _navigationService.Navigate();
+                }
+            }
+            else
+            {
+                if (idleTime.IdleTime.TotalSeconds >= threshold)
+                {
+                    //MessageBox.Show($"APP IS IDLE AIIEEEEE \n{idleTime.IdleTime.TotalSeconds} and {TimeSpan.FromMilliseconds(idleTime.SystemUptimeMilliseconds)}\nCurrent ViewModel: {_navigationStore.CurrentViewModel}");
+
+                    //_navigationStore.CurrentViewModel = new IdleViewModel(_navigationStore, _buildingStore);
+
+                    _navigationService.Navigate();
+                }
             }
         }
     }

@@ -47,7 +47,7 @@ namespace WpfApp4.Commands
 
                     _buildingStore.CurrentBuildingName = room.RoomBuildingName;
 
-                    _buildingStore.CurrentVideo = room.RoomVideoID;
+                    _buildingStore.CurrentVideo = room.RoomVideo;
 
                     _buildingStore.CurrentVideoQR = room.RoomQR;
                 }

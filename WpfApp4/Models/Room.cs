@@ -12,7 +12,7 @@
 
         public string? RoomBuildingName { get; set; }
 
-        public string? RoomVideoID { get; set; }
+        public string? RoomVideo { get; set; }
 
         public string? RoomQR { get; set; }
     }

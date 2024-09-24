@@ -10,6 +10,10 @@ namespace WpfApp4.Models
     {
         public static ObservableCollection<Room> DatabaseRoom = new ObservableCollection<Room>();
 
+        public static List<string> roomNewFilePaths = new List<string>();
+
+        public static List<string> roomOldFilePaths = new List<string>();
+
         public static BuildingStore _buildingStore;
 
         public static void getDatabase(BuildingStore buildingStore)
@@ -17,6 +21,8 @@ namespace WpfApp4.Models
             _buildingStore = buildingStore;
 
             DatabaseRoom.Clear();
+            roomOldFilePaths.Clear();
+            roomNewFilePaths.Clear();
 
             using (SqlCommand command = new SqlCommand($"select * from test.dbo.Room where roomBuilding = {_buildingStore.CurrentBuilding} and roomFloor = {_buildingStore.CurrentFloor}", DatabaseService.connection()))
             {
@@ -26,6 +32,8 @@ namespace WpfApp4.Models
                     // Loop through the result and print database names
                     while (reader.Read())
                     {
+                        //string test = reader["roomVideo"].ToString();
+
                         DatabaseRoom.Add(new Room
                         {
                             RoomID = Convert.ToInt32(reader["roomID"]),
@@ -36,18 +44,27 @@ namespace WpfApp4.Models
 
                             RoomBuildingID = Convert.ToInt32(reader["roomBuilding"]),
 
-                            RoomVideoID = Convert.ToString(reader["roomVideo"] is DBNull ? null : reader["roomVideo"]),
+                            RoomVideo = Convert.ToString(reader["roomVideo"] is DBNull ? null : reader["roomVideo"]),
 
-                            RoomQR = Convert.ToString(reader["roomQR"] is DBNull ? new Uri("../Resources/Buffer.png", UriKind.Relative) : reader["roomQR"])
+                            //RoomVideo = Convert.ToString(reader["roomVideo"] is DBNull ? null : FilePathService.GetVideoPathRelative(reader["roomVideo"].ToString())),
+
+                            RoomQR = Convert.ToString(reader["roomQR"] is DBNull ? new Uri("../Resources/Buffer.png", UriKind.Relative) : $@"\{reader["roomQR"]}")
                         });
 
-                        Debug.WriteLine($"SHIT HAS BEEN ADDED");
+                        //if ((reader["roomVideo"] is DBNull ? true : (FilePathService.CheckFilePath(reader["roomVideo"].ToString())) == false))
+                        //{ 
+                        //    roomOldFilePaths.Add(reader["roomVideo"].ToString());
+                        //    roomNewFilePaths.Add(FilePathService.GetVideoNewPath(reader["roomVideo"].ToString()));
+                        //}
+
+                        //Debug.WriteLine($"SHIT HAS BEEN ADDED");
                     }
 
                     DatabaseService.connectionClose();
                 }
             }
-        }
+            //DatabaseService.UpdateDatabaseValue("Room", "roomVideo", roomNewFilePaths, roomOldFilePaths);
+         }
 
         public static void checkDatabase()
         {
@@ -55,7 +72,7 @@ namespace WpfApp4.Models
             {
                 var room = DatabaseRoom[i];
 
-                Debug.WriteLine($"{room.RoomID}, {room.RoomName}, {room.RoomFloor}, {room.RoomBuildingID}, {room.RoomVideoID}");
+                Debug.WriteLine($"{room.RoomID}, {room.RoomName}, {room.RoomFloor}, {room.RoomBuildingID}, {room.RoomVideo}");
             }
         }
 
