@@ -15,7 +15,7 @@
             <MediaElement x:Name="MediaPlayer" Source="Resources\idle_bg.mp4" Stretch="Fill" Margin="-79,-185,-142,-123" MediaEnded="MediaElement_MediaEnded"/>
 
             <!-- Image on  -->
-            <Image Source="\Resources\templogo.png"
+            <Image Source="\Resources\fulladulogo.png"
                VerticalAlignment="Top"
                HorizontalAlignment="Center"
                Stretch="Uniform"

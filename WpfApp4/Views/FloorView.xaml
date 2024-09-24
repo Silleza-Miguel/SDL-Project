@@ -25,7 +25,7 @@
         <!--Top Bar-->
         <Border Height="90" Background="#05548B">
             <Grid>
-                <ui:Image Source="\Resources\dexlogo.png"  HorizontalAlignment="Left"  Margin="25,15,15,15" Width="200">
+                <ui:Image Source="\Resources\adulogo.png"  HorizontalAlignment="Left"  Margin="25,10,10,10" Width="200">
                     <ui:Image.Effect>
                         <DropShadowEffect BlurRadius="0"
                                           ShadowDepth="1"/>
@@ -226,7 +226,7 @@
                         <Style TargetType="Path">
                             <Setter Property="Stroke" Value="{x:Null}"/>
                             <Setter Property="Fill" Value="Transparent"/>
-                            <Style.Triggers>
+                            <!--<Style.Triggers>
                                 <EventTrigger RoutedEvent="MouseEnter">
                                     <BeginStoryboard>
                                         <Storyboard>
@@ -245,7 +245,7 @@
                                         </Storyboard>
                                     </BeginStoryboard>
                                 </EventTrigger>
-                                <!--<EventTrigger RoutedEvent="MouseDown">
+                                <EventTrigger RoutedEvent="MouseDown">
                                     <BeginStoryboard>
                                         <Storyboard>
                                             <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
@@ -253,8 +253,8 @@
                                             </ColorAnimationUsingKeyFrames>
                                         </Storyboard>
                                     </BeginStoryboard>
-                                </EventTrigger>-->
-                            </Style.Triggers>
+                                </EventTrigger>
+                            </Style.Triggers>-->
                         </Style>
                     </Grid.Resources>
 
@@ -384,6 +384,7 @@
 
                                             <ToggleButton IsChecked="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=IsSelected, Mode=TwoWay}"
                                                           Content="{Binding RoomName}"
+                                                          Tag="{Binding RoomID}"
                                                           Command="{Binding DataContext.RoomSelectCommand, RelativeSource={RelativeSource AncestorType={x:Type ListBox}}}"
                                                           CommandParameter="{Binding}"
                                                           Checked="ToggleButton_Checked"

@@ -27,22 +27,22 @@
             </ui:Image.BorderBrush>
         </ui:Image>
 
-        <Path HorizontalAlignment="Left" Height="29" Margin="592,154,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="32">
+        <Path x:Name="n182" HorizontalAlignment="Left" Height="29" Margin="592,154,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="32">
             <Path.Data>
                 <PathGeometry Figures="M592.3,154.5 L623.69999,154.5 623.69999,182.5 592.50257,182.5 z"/>
             </Path.Data>
         </Path>
-        <Path HorizontalAlignment="Left" Height="46" Margin="592,184,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="32">
+        <Path x:Name="n181" HorizontalAlignment="Left" Height="46" Margin="592,184,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="32">
             <Path.Data>
                 <PathGeometry Figures="M592.3,184.1 L623.69999,184.1 623.69999,229.30001 592.50257,229.30001 z"/>
             </Path.Data>
         </Path>
-        <Path HorizontalAlignment="Left" Height="46" Margin="592,232,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="31">
+        <Path x:Name="n180" HorizontalAlignment="Left" Height="46" Margin="592,232,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="31">
             <Path.Data>
                 <PathGeometry Figures="M592.7,232.3 L621.50001,232.3 621.50001,277.3 591.90553,277.3 z"/>
             </Path.Data>
         </Path>
-        <Path HorizontalAlignment="Left" Height="46" Margin="593,279,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="31">
+        <Path x:Name="n179" HorizontalAlignment="Left" Height="46" Margin="593,279,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="31">
             <Path.Data>
                 <PathGeometry Figures="M593.5,323.9 L622.5,323.9 622.5,278.89999 592.1,278.89999 592.1,322.49999 z"/>
             </Path.Data>
@@ -52,17 +52,17 @@
                 <PathGeometry Figures="M591.9,341.8 L622.50002,341.8 622.50002,355.09999 592.09744,355.09999 z"/>
             </Path.Data>
         </Path>
-        <Path HorizontalAlignment="Left" Height="33" Margin="592,357,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="32">
+        <Path x:Name="n159" HorizontalAlignment="Left" Height="33" Margin="592,357,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="32">
             <Path.Data>
                 <PathGeometry Figures="M592.3,388.6 L623.29999,388.6 623.29999,356.50001 592.49999,356.50001 592.49999,386.89469 z"/>
             </Path.Data>
         </Path>
-        <Path HorizontalAlignment="Left" Height="46" Margin="591,390,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="35">
+        <Path x:Name="n177" HorizontalAlignment="Left" Height="46" Margin="591,390,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="35">
             <Path.Data>
                 <PathGeometry Figures="M592.7,434.9 L624.30001,434.9 624.30001,390.29999 591.12001,390.29999 z"/>
             </Path.Data>
         </Path>
-        <Path HorizontalAlignment="Left" Height="32" Margin="654,407,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="90">
+        <Path x:Name="n166" HorizontalAlignment="Left" Height="32" Margin="654,407,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="90">
             <Path.Data>
                 <PathGeometry Figures="M654.3,408.1 L654.3,438.50001 742.89999,438.50001 742.89999,407.28934 z"/>
             </Path.Data>
@@ -72,72 +72,72 @@
                 <PathGeometry Figures="M642.4,335.83333 L672.03336,335.83333 672.03336,387.03334 642.16954,387.03334 z"/>
             </Path.Data>
         </Path>
-        <Path HorizontalAlignment="Left" Height="42" Margin="754,383,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="38">
+        <Path x:Name="n195" HorizontalAlignment="Left" Height="42" Margin="754,383,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="38">
             <Path.Data>
                 <PathGeometry Figures="M754.16667,383.3 L791.43335,383.3 791.43335,424.03332 754.09954,424.03332 754.09954,384.16102 z"/>
             </Path.Data>
         </Path>
-        <Path HorizontalAlignment="Left" Height="41" Margin="754,341,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="37">
+        <Path x:Name="n194" HorizontalAlignment="Left" Height="41" Margin="754,341,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="37">
             <Path.Data>
                 <PathGeometry Figures="M754.56667,341 L789.89998,341 789.89998,381.43333 753.89363,381.43333 z"/>
             </Path.Data>
         </Path>
-        <Path HorizontalAlignment="Left" Height="28" Margin="754,313,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="38">
+        <Path x:Name="n193" HorizontalAlignment="Left" Height="28" Margin="754,313,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="38">
             <Path.Data>
                 <PathGeometry Figures="M754.96667,313 L790.83334,313 790.83334,339.96667 754.43532,339.96667 z"/>
             </Path.Data>
         </Path>
-        <Path HorizontalAlignment="Left" Height="57" Margin="754,256,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="37">
+        <Path x:Name="n192" HorizontalAlignment="Left" Height="57" Margin="754,256,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="37">
             <Path.Data>
                 <PathGeometry Figures="M754.03333,256.3 L790.36666,256.3 790.36666,312.49999 754.90802,312.49999 z"/>
             </Path.Data>
         </Path>
-        <Path HorizontalAlignment="Left" Height="40" Margin="755,215,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="37">
+        <Path x:Name="n191" HorizontalAlignment="Left" Height="40" Margin="755,215,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="37">
             <Path.Data>
                 <PathGeometry Figures="M754.83333,215.36667 L790.69998,215.36667 790.69998,254.7 754.56763,254.7 z"/>
             </Path.Data>
         </Path>
-        <Path HorizontalAlignment="Left" Height="41" Margin="755,174,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="36">
+        <Path x:Name="n190" HorizontalAlignment="Left" Height="41" Margin="755,174,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="36">
             <Path.Data>
                 <PathGeometry Figures="M754.7,174.26667 L789.23335,174.26667 789.23335,214.43333 754.4369,214.43333 754.4369,174.83569 z"/>
             </Path.Data>
         </Path>
-        <Path HorizontalAlignment="Left" Height="39" Margin="754,114,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="37">
+        <Path x:Name="n189" HorizontalAlignment="Left" Height="39" Margin="754,114,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="37">
             <Path.Data>
                 <PathGeometry Figures="M754.43333,113.9 L790.36668,113.9 790.36668,152.1 754.23372,152.1 z"/>
             </Path.Data>
         </Path>
-        <Path HorizontalAlignment="Left" Height="15" Margin="608,123,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="34">
+        <Path x:Name="n168" HorizontalAlignment="Left" Height="15" Margin="608,123,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="34">
             <Path.Data>
                 <PathGeometry Figures="M608.65,122.7 L640.20002,122.7 640.20002,136.3 608.00917,136.3 z"/>
             </Path.Data>
         </Path>
-        <Path HorizontalAlignment="Left" Height="39" Margin="585,83,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="23">
+        <Path x:Name="n157" HorizontalAlignment="Left" Height="39" Margin="585,83,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="23">
             <Path.Data>
                 <PathGeometry Figures="M586.05,83.3 L594.59999,83.3 594.59999,99.700003 606.14246,99.700003 606.14246,122.45501 585.23672,122.45501 585.23672,82.887845 z"/>
             </Path.Data>
         </Path>
-        <Path HorizontalAlignment="Left" Height="48" Margin="608,74,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="34">
+        <Path x:Name="n155" HorizontalAlignment="Left" Height="48" Margin="608,74,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="34">
             <Path.Data>
                 <PathGeometry Figures="M608.45,74.5 L641.00001,74.5 641.00001,121.7 608.20342,121.7 z"/>
             </Path.Data>
         </Path>
-        <Path HorizontalAlignment="Left" Height="18" Margin="586,49,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="22">
+        <Path x:Name="n158" HorizontalAlignment="Left" Height="18" Margin="586,49,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="22">
             <Path.Data>
                 <PathGeometry Figures="M586.05,49.4 L607.19999,49.4 607.19999,66.100002 586.40249,66.100002 z"/>
             </Path.Data>
         </Path>
-        <Path HorizontalAlignment="Left" Height="38" Margin="662,115,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="39">
+        <Path x:Name="n187" HorizontalAlignment="Left" Height="38" Margin="662,115,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="39">
             <Path.Data>
                 <PathGeometry Figures="M663.4,114.53333 L700.36669,114.53333 700.36669,151.43333 662.76726,151.43333 z"/>
             </Path.Data>
         </Path>
-        <Path HorizontalAlignment="Left" Height="39" Margin="701,114,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="44">
+        <Path x:Name="n188" HorizontalAlignment="Left" Height="39" Margin="701,114,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="44">
             <Path.Data>
                 <PathGeometry Figures="M743.66667,114 L743.66667,152.43333 700.96669,152.43333 700.96669,113.76401 z"/>
             </Path.Data>
         </Path>
-        <Path HorizontalAlignment="Left" Height="26" Margin="433,436,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="84">
+        <Path x:Name="n170" HorizontalAlignment="Left" Height="26" Margin="433,436,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="84">
             <Path.Data>
                 <PathGeometry Figures="M434.73333,436 L515.56667,436 515.56667,460.83333 433.16989,460.83333 433.16989,436.298 z"/>
             </Path.Data>
@@ -152,37 +152,37 @@
                 <PathGeometry Figures="M471,355 L471,433.7 516.63333,433.7 516.63333,406.83575 492.19637,406.83575 492.19637,355.29886 z"/>
             </Path.Data>
         </Path>
-        <Path HorizontalAlignment="Left" Height="34" Margin="407,310,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="31">
+        <Path x:Name="n173" HorizontalAlignment="Left" Height="34" Margin="407,310,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="31">
             <Path.Data>
                 <PathGeometry Figures="M407.83333,309.83333 L437.30001,309.83333 437.30001,340.76668 437.30001,342.2967 406.61403,342.2967 406.61403,310.22684 z"/>
             </Path.Data>
         </Path>
-        <Path HorizontalAlignment="Left" Height="35" Margin="439,309,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="32">
+        <Path x:Name="n174" HorizontalAlignment="Left" Height="35" Margin="439,309,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="32">
             <Path.Data>
                 <PathGeometry Figures="M439.96667,309.03333 L469.70001,309.03333 469.70001,342.69999 438.90949,342.69999 438.90949,308.57123 439.90273,308.57123 z"/>
             </Path.Data>
         </Path>
-        <Path HorizontalAlignment="Left" Height="24" Margin="361,317,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="25">
+        <Path x:Name="n160" HorizontalAlignment="Left" Height="24" Margin="361,317,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="25">
             <Path.Data>
                 <PathGeometry Figures="M360.95,317.3 L385.00001,317.3 385.00001,339.89999 360.59928,339.89999 z"/>
             </Path.Data>
         </Path>
-        <Path HorizontalAlignment="Left" Height="15" Margin="360,341,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="25">
+        <Path x:Name="n162" HorizontalAlignment="Left" Height="15" Margin="360,341,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="25">
             <Path.Data>
                 <PathGeometry Figures="M384.15,341.9 L384.15,354.89999 359.99999,354.89999 359.99999,341.09999 383.39531,341.09999 z"/>
             </Path.Data>
         </Path>
-        <Path HorizontalAlignment="Left" Height="15" Margin="360,358,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="26">
+        <Path x:Name="n169" HorizontalAlignment="Left" Height="15" Margin="360,358,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="26">
             <Path.Data>
                 <PathGeometry Figures="M361.15,357.6 L384.79999,357.6 384.79999,371.50001 360.41093,371.50001 360.41093,358.69215 z"/>
             </Path.Data>
         </Path>
-        <Path HorizontalAlignment="Left" Height="14" Margin="360,374,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="25">
+        <Path x:Name="n161" HorizontalAlignment="Left" Height="14" Margin="360,374,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="25">
             <Path.Data>
                 <PathGeometry Figures="M360.75,373.8 L382.4,373.8 383.63011,373.8 383.63011,386.89999 359.40704,386.89999 359.40704,373.49768 z"/>
             </Path.Data>
         </Path>
-        <Path HorizontalAlignment="Left" Height="29" Margin="360,390,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="33">
+        <Path x:Name="n164" HorizontalAlignment="Left" Height="29" Margin="360,390,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="33">
             <Path.Data>
                 <PathGeometry Figures="M360.95,389.75 L391.60001,389.75 391.60001,417.8 360.01074,417.8 z"/>
             </Path.Data>
@@ -192,7 +192,7 @@
                 <PathGeometry Figures="M310.7,327 L335.90001,327 335.90001,451.7 311.10321,451.7 z"/>
             </Path.Data>
         </Path>
-        <Path HorizontalAlignment="Left" Height="20" Margin="361,430,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="33">
+        <Path x:Name="n163" HorizontalAlignment="Left" Height="20" Margin="361,430,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="33">
             <Path.Data>
                 <PathGeometry Figures="M361.53333,430.2 L369.89999,430.2 369.89999,434.70001 393.43125,434.70001 393.43125,447.45001 360.81305,447.45001 z"/>
             </Path.Data>
@@ -202,34 +202,29 @@
                 <PathGeometry Figures="M579.5,436.1 L579.5,461.30001 536.1,461.30001 536.1,436.50321 z"/>
             </Path.Data>
         </Path>
-        <Path HorizontalAlignment="Left" Height="34" Margin="517,309,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="29">
+        <Path x:Name="n175" HorizontalAlignment="Left" Height="34" Margin="517,309,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="29">
             <Path.Data>
                 <PathGeometry Figures="M517.5,308.7 L544.1,308.7 544.1,341.50001 516.51482,341.50001 z"/>
             </Path.Data>
         </Path>
-        <Path HorizontalAlignment="Left" Height="35" Margin="547,309,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="33">
+        <Path x:Name="n176" HorizontalAlignment="Left" Height="35" Margin="547,309,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="33">
             <Path.Data>
                 <PathGeometry Figures="M579.1,309.1 L579.1,342.70001 546.69998,342.70001 546.69998,309.4953 z"/>
             </Path.Data>
         </Path>
-        <Path HorizontalAlignment="Left" Height="48" Margin="377,53,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="23">
+        <Path x:Name="n165" HorizontalAlignment="Left" Height="48" Margin="377,53,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="23">
             <Path.Data>
                 <PathGeometry Figures="M376.65,53 L398.79999,53 398.79999,100.1 376.19693,100.1 376.19693,52.699362 z"/>
             </Path.Data>
         </Path>
-        <Path HorizontalAlignment="Left" Height="30" Margin="344,85,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="36">
+        <Path x:Name="n154" HorizontalAlignment="Left" Height="30" Margin="344,85,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="36">
             <Path.Data>
                 <PathGeometry Figures="M344.25,85.35 L374.4,85.35 374.4,99.399998 374.4,101.65804 379.17374,101.65804 379.17374,115.16313 344.7988,115.16313 z"/>
             </Path.Data>
         </Path>
-        <Path HorizontalAlignment="Left" Height="29" Margin="345,54,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="30">
+        <Path x:Name="n156" HorizontalAlignment="Left" Height="29" Margin="345,54,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="30">
             <Path.Data>
                 <PathGeometry Figures="M345.85,54.55 L374.20001,54.55 374.20001,81.599999 344.38188,81.599999 344.38188,53.998981 z"/>
-            </Path.Data>
-        </Path>
-        <Path HorizontalAlignment="Left" Height="14" Margin="346,39,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="54">
-            <Path.Data>
-                <PathGeometry Figures="M345.65,38.6 L398.19999,38.6 398.19999,51.699998 345.20381,51.699998 z"/>
             </Path.Data>
         </Path>
         <Path HorizontalAlignment="Left" Height="22" Margin="341,118,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="81">

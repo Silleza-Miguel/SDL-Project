@@ -25,7 +25,7 @@
         <!--Top Bar-->
         <Border Height="90" Background="#05548B">
             <Grid>
-                <ui:Image Source="\Resources\dexlogo.png"  HorizontalAlignment="Left"  Margin="25,15,15,15" Width="200">
+                <ui:Image Source="\Resources\adulogo.png"  HorizontalAlignment="Left"  Margin="25,10,10,10" Width="200">
                     <ui:Image.Effect>
                         <DropShadowEffect BlurRadius="0"
                                           ShadowDepth="1"/>

@@ -24,7 +24,7 @@ namespace WpfApp4.Models
             roomOldFilePaths.Clear();
             roomNewFilePaths.Clear();
 
-            using (SqlCommand command = new SqlCommand($"select * from test.dbo.Room where roomBuilding = {_buildingStore.CurrentBuilding} and roomFloor = {_buildingStore.CurrentFloor}", DatabaseService.connection()))
+            using (SqlCommand command = new SqlCommand($"select * from test.dbo.Room where roomBuilding = {_buildingStore.CurrentBuilding} and roomFloor = {_buildingStore.CurrentFloor} order by roomName ASC", DatabaseService.connection()))
             {
                 // Execute the query and retrieve the result
                 using (SqlDataReader reader = command.ExecuteReader())

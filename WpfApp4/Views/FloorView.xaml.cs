@@ -5,6 +5,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Shapes;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace WpfApp4.Views
 {
@@ -15,6 +16,10 @@ namespace WpfApp4.Views
     {
 
         public string roomName;
+
+        public int roomID;
+
+        public string test;
 
         public FloorView()
         {
@@ -57,7 +62,13 @@ namespace WpfApp4.Views
 
             roomName = (string)toggle.Content;
 
-            object wantedNode = FindElementByName<Path>(contentPath, roomName);
+            roomID = (int)toggle.Tag;
+
+            test = $"n{roomID}";
+
+            roomName = roomName.Replace(" ", "_").Replace("'", "").ToUpper();
+
+            object wantedNode = FindElementByName<Path>(contentPath, test);
             if (wantedNode is Path)
             {
                 // Following executed if Text element was found.
@@ -75,7 +86,7 @@ namespace WpfApp4.Views
         {
             ToggleButton toggle = (ToggleButton)sender;
 
-            object wantedNode = FindElementByName<Path>(contentPath, roomName);
+            object wantedNode = FindElementByName<Path>(contentPath, test);
             if (wantedNode is Path)
             {
                 // Following executed if Text element was found.
@@ -88,12 +99,12 @@ namespace WpfApp4.Views
                 wantedChild.Fill.BeginAnimation(SolidColorBrush.ColorProperty, animation);
             }
 
-            roomName = null;
+            test = null;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            object wantedNode = FindElementByName<Path>(contentPath, roomName);
+            object wantedNode = FindElementByName<Path>(contentPath, test);
             if (wantedNode is Path)
             {
                 // Following executed if Text element was found.
@@ -101,7 +112,7 @@ namespace WpfApp4.Views
                 wantedChild.Fill = Brushes.Transparent;
             }
 
-            roomName = null;
+            test = null;
         }
 
         public T FindElementByName<T>(FrameworkElement element, string sChildName) where T : FrameworkElement

@@ -27,22 +27,22 @@
             </ui:Image.BorderBrush>
         </ui:Image>
 
-        <Path x:Name="CT306" HorizontalAlignment="Left" Height="176" Margin="285,75,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="133">
+        <Path x:Name="n39" HorizontalAlignment="Left" Height="176" Margin="285,75,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="133">
             <Path.Data>
                 <PathGeometry Figures="M287.13333,75.266667 L417.43333,75.266667 417.43333,250.5 285.16213,250.5 z"/>
             </Path.Data>
         </Path>
-        <Path x:Name="CT305" HorizontalAlignment="Left" Height="176" Margin="419,75,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="134">
+        <Path x:Name="n38" HorizontalAlignment="Left" Height="176" Margin="419,75,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="134">
             <Path.Data>
                 <PathGeometry Figures="M552.2,75.8 L550.83335,250.03334 371.02934,248.13079 371.02934,75.099064 z"/>
             </Path.Data>
         </Path>
-        <Path x:Name="CT304" HorizontalAlignment="Left" Height="163" Margin="706,97,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="130">
+        <Path x:Name="n37" HorizontalAlignment="Left" Height="163" Margin="706,97,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="130">
             <Path.Data>
                 <PathGeometry Figures="M707.8,96.6 L705.49999,255.7 846.83425,258.4684 854.0733,258.4684 854.0733,142.06304 z"/>
             </Path.Data>
         </Path>
-        <Path x:Name="CT301" HorizontalAlignment="Left" Height="114" Margin="704,301,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="179" MouseDown="CT301_MouseDown">
+        <Path x:Name="n171" HorizontalAlignment="Left" Height="114" Margin="704,301,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="179" MouseDown="CT301_MouseDown">
             <Path.Data>
                 <PathGeometry Figures="M705.13333,301.26667 L882.3667,301.26667 882.0663,414.63333 703.69814,412.86093 z"/>
             </Path.Data>
@@ -53,13 +53,13 @@
             </Path.Data>
         </Path>
 
-        <Path x:Name="CT302" HorizontalAlignment="Left" Height="123" Margin="433,300,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="146">
+        <Path x:Name="n172" HorizontalAlignment="Left" Height="123" Margin="433,300,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="146">
             <Path.Data>
                 <PathGeometry Figures="M432.86667,300.2 L432.86667,422.56668 577.83334,422.56668 577.83334,300.96898 z"/>
             </Path.Data>
         </Path>
 
-        <Path x:Name="CT303" HorizontalAlignment="Left" Height="122" Margin="286,299,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="144">
+        <Path x:Name="n6" HorizontalAlignment="Left" Height="122" Margin="286,299,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="144">
             <Path.Data>
                 <PathGeometry Figures="M285.8,298.6 L285.8,419.30001 428.56665,419.30001 428.56665,301.42631 z"/>
             </Path.Data>

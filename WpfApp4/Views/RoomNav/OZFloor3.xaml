@@ -112,7 +112,7 @@
                 <PathGeometry Figures="M351.6,122.8 L434.70001,122.8 434.70001,179.3 351.49989,179.3 z"/>
             </Path.Data>
         </Path>
-        <Path HorizontalAlignment="Left" Height="54" Margin="352,184,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="84">
+        <Path x:Name="CHEMENG_FACULTY_ROOM" HorizontalAlignment="Left" Height="54" Margin="352,184,0,0" Stroke="Black" Stretch="Fill" VerticalAlignment="Top" Width="84">
             <Path.Data>
                 <PathGeometry Figures="M351.6,183.7 L433.90001,183.7 433.90001,236.5 351.09818,236.5 z"/>
             </Path.Data>
