@@ -32,6 +32,7 @@ namespace WpfApp4
             {
                 DataContext = new MainViewModel(_navigationStore, _timer, _buildingStore)
             };
+
             MainWindow.Show();
 
             base.OnStartup(e);
